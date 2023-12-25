@@ -38,15 +38,6 @@ provider:
     lambda: true
     apiGateway: true
 
-
-  iam:
-    role:
-      statements:
-        - Effect: Allow
-          Action:
-            - xray:PutTelemetryRecords
-          Resource: "*"
-
 custom:
   documentation:
     api:
